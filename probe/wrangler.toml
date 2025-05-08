@@ -1,0 +1,12 @@
+name = "wilmake_probe"
+compatibility_date = "2025-04-21"
+dev.port = 3000
+main = "main.ts"
+
+routes = [
+  { pattern = "probe.wilmake.com", custom_domain = true }
+]
+
+[vars]
+TARGET_HOST="ttft.wilmake.com"
+TARGET_PATH="/hello-world?ttft=true&metrics=true"

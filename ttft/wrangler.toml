@@ -1,0 +1,12 @@
+name = "wilmake_ttft"
+compatibility_date = "2025-04-21"
+dev.port = 3000
+main = "main.ts"
+
+routes = [
+  { pattern = "ttft.wilmake.com", custom_domain = true }
+]
+
+[vars]
+LLM_ENDPOINT = "https://api.cerebras.ai/v1/chat/completions"
+LLM_MODEL = "llama-3.3-70b"
